@@ -1,0 +1,155 @@
+.search {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.navbar-title {
+  font-size: 1.5em;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.navbar-link:hover {
+  text-decoration: underline;
+}
+
+.search-main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.books-section {
+  margin-bottom: 40px;
+}
+
+.books-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  text-decoration: none;
+  color: #000;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.book-cover {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.book-info {
+  padding: 10px;
+}
+
+.book-info h3 {
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.author {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.price {
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.price-free {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.price-discounted {
+  color: #333;
+}
+
+.price-original {
+  color: #999;
+  text-decoration: line-through;
+  margin-left: 5px;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #e74c3c;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-nav {
+  margin-top: 10px;
+}
+
+.footer-link {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}

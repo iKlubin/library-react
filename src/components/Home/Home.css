@@ -1,0 +1,278 @@
+/* Общие стили для страницы */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    min-height: 1080px;
+  }
+  
+  /* Стили для навбара */
+  .navbar {
+    background-color: #007bff;
+    color: #141414;
+    padding: 10px 0 10px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 0 100px;
+  }
+  
+  .navbar-title {
+    font-size: 1.8em;
+    margin: 0;
+    color: #000;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .navbar-link:hover {
+    color: #d3d3d3;
+  }
+  
+  /* Стили для главного контента */
+  .home-main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .home-hero {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .home-hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .home-hero p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  /* Стили для карточек книг */
+
+  
+  .book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 800px;
+  }
+  
+  .book-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .book-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .book-cover {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .book-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .book-author {
+    color: #777;
+  }
+  
+  .book-price {
+    font-size: 1.1em;
+    color: #007bff;
+  }
+  
+  /* Стили для футера */
+  .footer {
+    background-color: #333;
+    color: #131313;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-nav {
+    margin-top: 10px;
+  }
+  
+  .footer-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  
+  .footer-link:hover {
+    color: #d3d3d3;
+  }
+
+.home {
+  font-family: Arial, sans-serif;
+}
+
+.home-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.books-section,
+.new-arrivals {
+  margin-bottom: 40px;
+  margin-top: 100px;
+}
+
+.books-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  text-decoration: none;
+  color: #000;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.book-cover {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.book-info {
+  padding: 10px;
+}
+
+.book-info h3 {
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.author {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.price {
+  font-size: 1em;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.price-free {
+  color: #28a745; /* Зеленый цвет для бесплатных книг */
+  font-weight: bold;
+}
+
+.price-discounted {
+  color: #333;
+  font-weight: bold;
+}
+
+.price-original {
+  color: #999;
+  text-decoration: line-through;
+  margin-left: 5px;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #e74c3c;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.recommended-section {
+  margin-top: 100px;
+}
+
+.book-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -15px;
+}
+
+.add-to-cart,
+.add-to-favorites {
+  flex: 1;
+  background-color: #ff6f61; /* Основной цвет кнопки */
+  color: white; /* Цвет текста */
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 20px; /* Закругленные края */
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.2s;
+  margin: 0 5px; /* Отступ между кнопками */
+  text-align: center;
+}
+
+.add-to-cart:hover,
+.add-to-favorites:hover {
+  background-color: #e65a50; /* Темный цвет при наведении */
+  transform: scale(1.05); /* Легкое увеличение при наведении */
+}
+
+.add-to-cart:active,
+.add-to-favorites:active {
+  transform: scale(0.95); /* Уменьшение при нажатии */
+}

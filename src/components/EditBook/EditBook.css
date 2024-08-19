@@ -1,0 +1,58 @@
+.editBook {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
+  .editForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-size: 16px;
+    color: #555555;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .submitButton {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    align-self: flex-start;
+  }
+  
+  .submitButton:hover {
+    background-color: #218838;
+  }
+  

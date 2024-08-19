@@ -1,0 +1,146 @@
+[
+    {
+      "title": "Мастер и Маргарита",
+      "author": "Михаил Булгаков",
+      "description": "Роман, который сочетает в себе элементы фантастики, сатиры и философии, исследует тему борьбы добра и зла.",
+      "price": 350,
+      "isFree": false,
+      "coverImage": "https://firebasestorage.googleapis.com/v0/b/library-react-63def.appspot.com/o/master_and_margarita.jpg?alt=media",
+      "category": "Классика",
+      "popularity": 10,
+      "tags": ["классика", "фантастика"]
+    },
+    {
+      "title": "Преступление и наказание",
+      "author": "Фёдор Достоевский",
+      "description": "Психологический роман о борьбе между добром и злом внутри человека.",
+      "price": 400,
+      "isFree": false,
+      "coverImage": "https://firebasestorage.googleapis.com/v0/b/library-react-63def.appspot.com/o/prestuplenie_i_nakazanie.jpg?alt=media",
+      "category": "Классика",
+      "popularity": 9,
+      "tags": ["психология", "классика"]
+    },
+    {
+      "title": "Война и мир",
+      "author": "Лев Толстой",
+      "description": "Эпопея, описывающая события Наполеоновских войн в России и судьбы нескольких семей.",
+      "price": 600,
+      "isFree": false,
+      "coverImage": "https://firebasestorage.googleapis.com/v0/b/library-react-63def.appspot.com/o/voina_i_mir.jpg?alt=media",
+      "category": "Историческая литература",
+      "popularity": 10,
+      "tags": ["история", "классика"]
+    },
+    {
+      "title": "Анна Каренина",
+      "author": "Лев Толстой",
+      "description": "Роман о трагической любви и жизни высшего общества в России XIX века.",
+      "price": 450,
+      "isFree": false,
+      "coverImage": "https://firebasestorage.googleapis.com/v0/b/library-react-63def.appspot.com/o/anna_karenina.jpg?alt=media",
+      "category": "Роман",
+      "popularity": 8,
+      "tags": ["роман", "драма"]
+    },
+    {
+      "title": "1984",
+      "author": "Джордж Оруэлл",
+      "description": "Антиутопический роман о тоталитарном государстве и последствиях тотального контроля.",
+      "price": 300,
+      "isFree": false,
+      "coverImage": "https://firebasestorage.googleapis.com/v0/b/library-react-63def.appspot.com/o/1984.jpg?alt=media",
+      "category": "Фантастика",
+      "popularity": 9,
+      "tags": ["антиутопия", "фантастика"]
+    },
+    {
+      "title": "Гарри Поттер и философский камень",
+      "author": "Дж.К. Роулинг",
+      "description": "Первая книга в серии о приключениях молодого волшебника Гарри Поттера.",
+      "price": 500,
+      "isFree": false,
+      "coverImage": "https://firebasestorage.googleapis.com/v0/b/library-react-63def.appspot.com/o/harry_potter_1.jpg?alt=media",
+      "category": "Фэнтези",
+      "popularity": 10,
+      "tags": ["фэнтези", "приключения"]
+    },
+    {
+      "title": "Убийство в Восточном экспрессе",
+      "author": "Агата Кристи",
+      "description": "Детективный роман о расследовании убийства, произошедшего на поезде Восточный экспресс.",
+      "price": 350,
+      "isFree": false,
+      "coverImage": "https://firebasestorage.googleapis.com/v0/b/library-react-63def.appspot.com/o/ubijstvo_v_vostochnom_exprese.jpg?alt=media",
+      "category": "Детектив",
+      "popularity": 8,
+      "tags": ["детектив", "криминал"]
+    },
+    {
+      "title": "Шантарам",
+      "author": "Грегори Дэвид Робертс",
+      "description": "Автобиографический роман о беглом заключённом, который находит убежище в Индии.",
+      "price": 700,
+      "isFree": false,
+      "coverImage": "https://firebasestorage.googleapis.com/v0/b/library-react-63def.appspot.com/o/shantaram.jpg?alt=media",
+      "category": "Приключения",
+      "popularity": 7,
+      "tags": ["приключения", "автобиография"]
+    },
+    {
+      "title": "Стив Джобс",
+      "author": "Уолтер Айзексон",
+      "description": "Биография Стива Джобса, основателя Apple, основанная на интервью и личных воспоминаниях.",
+      "price": 550,
+      "isFree": false,
+      "coverImage": "https://firebasestorage.googleapis.com/v0/b/library-react-63def.appspot.com/o/steve_jobs.jpg?alt=media",
+      "category": "Биография",
+      "popularity": 7,
+      "tags": ["биография", "технологии"]
+    },
+    {
+      "title": "Невеста, которая не была в белом",
+      "author": "Юлия Шилова",
+      "description": "Роман о непростой судьбе женщины, которая ищет счастье в жизни и любви.",
+      "price": 400,
+      "isFree": false,
+      "coverImage": "https://firebasestorage.googleapis.com/v0/b/library-react-63def.appspot.com/o/nevesta_ne_byla_v_belom.jpg?alt=media",
+      "category": "Роман",
+      "popularity": 6,
+      "tags": ["роман", "драма"]
+    },
+    {
+      "title": "Психология влияния",
+      "author": "Роберт Чалдини",
+      "description": "Книга о принципах влияния и манипуляции, основанная на научных исследованиях.",
+      "price": 300,
+      "isFree": false,
+      "coverImage": "https://firebasestorage.googleapis.com/v0/b/library-react-63def.appspot.com/o/psikhologiya_vliyaniya.jpg?alt=media",
+      "category": "Психология",
+      "popularity": 8,
+      "tags": ["психология", "бизнес"]
+    },
+    {
+      "title": "Маленький принц",
+      "author": "Антуан де Сент-Экзюпери",
+      "description": "Философская сказка о маленьком принце и его путешествиях по планетам.",
+      "price": 250,
+      "isFree": false,
+      "coverImage": "https://firebasestorage.googleapis.com/v0/b/library-react-63def.appspot.com/o/malenkiy_prints.jpg?alt=media",
+      "category": "Сказка",
+      "popularity": 9,
+      "tags": ["сказка", "философия"]
+    },
+    {
+      "title": "Цветы для Элджернона",
+      "author": "Дэниел Киз",
+      "description": "Научно-фантастический роман о человеке с умственной отсталостью, который проходит экспериментальную операцию.",
+      "price": 350,
+      "isFree": false,
+      "coverImage": "https://firebasestorage.googleapis.com/v0/b/library-react-63def.appspot.com/o/tsvety_dlya_eldzherona.jpg?alt=media",
+      "category": "Научная фантастика",
+      "popularity": 8,
+      "tags": ["фантастика", "психология"]
+    }
+  ]
+  
