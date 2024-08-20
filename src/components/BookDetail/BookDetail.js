@@ -114,8 +114,6 @@ function BookDetails() {
 
     try {
       const bookDocRef = doc(db, 'books', id);
-      const bookSnapshot = await getDoc(bookDocRef);
-      const bookData = bookSnapshot.data();
 
       const newReviewData = {
         name: user.displayName,

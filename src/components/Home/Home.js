@@ -105,13 +105,22 @@ function Home() {
     }
   
     try {
-      // Используем documentId для получения ссылки на документ пользователя
-      const userRef = doc(db, 'users', 'fc4XfYSZeWBaVlo130sE');
-      await updateDoc(userRef, {
-        favorites: arrayUnion(bookId)
-      });
-  
-      alert('Книга добавлена в избранное!');
+      const usersCollection = collection(db, 'users');
+      const userQuery = query(usersCollection, where('uid', '==', user.uid));
+      const userSnapshot = await getDocs(userQuery);
+
+      if (!userSnapshot.empty) {
+        // Получаем ссылку на документ пользователя
+        const userDoc = userSnapshot.docs[0];
+        const userRef = doc(db, 'users', userDoc.id);
+
+        // Обновляем документ пользователя, добавляя bookId в массив favorites
+        await updateDoc(userRef, {
+          favorites: arrayUnion(bookId)
+        });
+    
+        alert('Книга добавлена в избранное!');
+      }
     } catch (error) {
       console.error('Ошибка при добавлении книги в избранное:', error);
       alert('Произошла ошибка при добавлении книги в избранное.');

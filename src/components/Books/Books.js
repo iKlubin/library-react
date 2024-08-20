@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { db, auth } from '../../index';
-import { collection, getDocs, query, orderBy, doc, updateDoc, arrayUnion } from 'firebase/firestore';
+import { collection, getDocs, query, orderBy, doc, updateDoc, arrayUnion, where } from 'firebase/firestore';
 import { Link } from 'react-router-dom';
 import styles from './Books.module.css';
 
@@ -49,17 +49,24 @@ function Books() {
       alert('Пожалуйста, войдите в систему, чтобы добавить книгу в избранное.');
       return;
     }
-
+  
     try {
-      // Ссылка на документ текущего пользователя в Firestore
-      const userRef = doc(db, 'users', user.uid);
+      const usersCollection = collection(db, 'users');
+      const userQuery = query(usersCollection, where('uid', '==', user.uid));
+      const userSnapshot = await getDocs(userQuery);
 
-      // Обновляем массив избранных книг в документе пользователя
-      await updateDoc(userRef, {
-        favorites: arrayUnion(bookId)
-      });
+      if (!userSnapshot.empty) {
+        // Получаем ссылку на документ пользователя
+        const userDoc = userSnapshot.docs[0];
+        const userRef = doc(db, 'users', userDoc.id);
 
-      alert('Книга добавлена в избранное!');
+        // Обновляем документ пользователя, добавляя bookId в массив favorites
+        await updateDoc(userRef, {
+          favorites: arrayUnion(bookId)
+        });
+    
+        alert('Книга добавлена в избранное!');
+      }
     } catch (error) {
       console.error('Ошибка при добавлении книги в избранное:', error);
       alert('Произошла ошибка при добавлении книги в избранное.');
